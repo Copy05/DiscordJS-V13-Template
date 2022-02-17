@@ -14,6 +14,7 @@ for (const file of commandFiles) {
 // The Bot goes up
 client.once('ready', () => {
 	console.log('Ready!');
+	client.user.setPresence({ activities: [{ name: 'activity text here' }], status: 'online' });
 });
 
 client.on('interactionCreate', async interaction => {
